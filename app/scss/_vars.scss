@@ -1,0 +1,33 @@
+$accent: #fcd7b6;
+$accent-blue: #a3bbc8;
+$some-text: #2B6373;
+$title: #121212;
+$white: #ffffff;
+
+%transform {
+	transform: translateX(-50%) translateY(-50%);
+}
+
+%dmsans-400 {
+	font-family: 'DMSans-Regular', sans-serif;
+	font-weight: 400;
+}
+%dmsans-500 {
+	font-family: 'DMSans-Medium', sans-serif;
+	font-weight: 500;
+}
+
+%dmsans-700 {
+	font-family: 'DMSans-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%rubik-400 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+
+%rubik-500 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+}
