@@ -6,15 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Glee | main</title>
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-	<header class="header">
-		<div class="container">
+	<div class="wide-container">
+		<header class="header">
 			<div class="header__inner">
 				<a class="logo" href="#">
-					<img src="images/logo.png" alt="Logo" class="logo__img">
+					<img class="logo__img" src="images/logo.png" alt="Logo">
 				</a>
 
 				<nav class="menu">
@@ -44,9 +45,163 @@
 					<button class="user-nav__dropdown" type="button"></button>
 				</div>
 			</div>
+
+		</header>
+
+		<section class="top-content" style="background-image: url(images/slider-bg.jpg);">
+			<div class="container">
+				<div class="top-content__slider">
+					<div class="top-content__item">
+						<div class="top-content__text-block">
+							<h1 class="top-content__title">smart and trendy</h1>
+							<p class="top-content__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt
+							</p>
+							<a class="top-content__link" href="#">Shop Now</a>
+						</div>
+						<img class="top-content__img" src="images/slide-img.png" alt="sofa">
+					</div>
+
+					<div class="top-content__item">
+						<div class="top-content__text-block">
+							<h1 class="top-content__title">smart and trendy</h1>
+							<p class="top-content__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt
+							</p>
+							<a class="top-content__link" href="#">Shop Now</a>
+						</div>
+						<img class="top-content__img" src="images/slide-img.png" alt="sofa">
+					</div>
+
+					<div class="top-content__item">
+						<div class="top-content__text-block">
+							<h1 class="top-content__title">smart and trendy</h1>
+							<p class="top-content__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt
+							</p>
+							<a class="top-content__link" href="#">Shop Now</a>
+						</div>
+						<img class="top-content__img" src="images/slide-img.png" alt="sofa">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="top-content__info">
+			<div class="top-content__info-item">
+				<div class="top-content__info-point"></div>
+				<div class="top-content__info-text">
+					<h5 class="top-content__info-title">Support 24/7.</h5>
+					<p>Contact us 24 hours a day, 7 days a week.</p>
+				</div>
+			</div>
+
+			<div class="top-content__info-item">
+				<div class="top-content__info-point"></div>
+				<div class="top-content__info-text">
+					<h5 class="top-content__info-title">Delivery.</h5>
+					<p>Free shipping on all US order.</p>
+				</div>
+			</div>
+
+			<div class="top-content__info-item">
+				<div class="top-content__info-point"></div>
+				<div class="top-content__info-text">
+					<h5 class="top-content__info-title">100% Payment secure.</h5>
+					<p>We ensure secure payment with PEV.</p>
+				</div>
+			</div>
 		</div>
-	</header>
-	<script src="js/main.min.js"></script>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__items">
+					<div class="footer__item">
+						<a class="logo" href="#">
+							<img class="logo__img" src="images/logo.png" alt="Logo">
+						</a>
+						<address class="footer__contacts">
+							<p class="footer__text"><span>ADDRESS</span>: 4772 Wines Lane Houston, TX 77032</p>
+							<p class="footer__text"><span>Telephone</span>: +832-347-5843</p>
+							<p class="footer__text"><span>Email</span>: contact@Glee.com</p>
+						</address>
+					</div>
+
+					<div class="footer__item">
+						<h4 class="footer__title">Services</h4>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">About us</a>
+							</li>
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">Return Policy</a>
+							</li>
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">Our Blog</a>
+							</li>
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">Contact Us</a>
+							</li>
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">Terms & Condition</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<h4 class="footer__title">account</h4>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">You account</a>
+							</li>
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">Checkout</a>
+							</li>
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">Login</a>
+							</li>
+							<li class="footer__list-item">
+								<a class="footer__list-link" href="#">Register</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<h4 class="footer__title">newsletter</h4>
+						<p class="footer__text footer__text--last">
+							Subscribe by our newsletter and get update protidin.
+						</p>
+						<form class="footer__form">
+							<input class="footer__email" type="email" placeholder="Email address">
+							<button class="footer__btn" type="button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+
+
+				<div class="footer-copy">
+					<p class="footer-copy__text">
+						©2020 CopyRight Example. All rights reserved.
+					</p>
+					<ul class="footer-copy__list">
+						<li class="footer-copy__item">
+							<a href="#" class="footer-copy__link">Home</a>
+						</li>
+						<li class="footer-copy__item">
+							<a href="#" class="footer-copy__link">About</a>
+						</li>
+						<li class="footer-copy__item">
+							<a href="#" class="footer-copy__link">Blog</a>
+						</li>
+						<li class="footer-copy__item">
+							<a href="#" class="footer-copy__link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="js/main.min.js"></script>
+	</div>
 </body>
 
 </html>

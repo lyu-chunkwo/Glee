@@ -1,5 +1,11 @@
-.container {
+.wide-container {
 	max-width: 1790px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.container {
+	max-width: 1190px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
