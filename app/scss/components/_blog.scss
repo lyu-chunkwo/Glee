@@ -13,22 +13,32 @@
 		color: #262626;
 		position: relative;
 		transition: color 0.5s;
+		outline: transparent;
+		padding-top: 10px;
 
 		.view-link {
 			margin-left: 12px;
 		}
 
 		&:hover {
-			color:$accent-blue;
+			color: $accent-blue;
 
 			.view-link {
 				transition: fill 0.5s;
-				fill:$accent-blue;
+				fill: $accent-blue;
 			}
+		}
+
+		&:focus {
+			border: 1px dashed $active;
+		}
+
+		&:active {
+			box-shadow: 0 0 0 3px #009dff;
 		}
 	}
 
-	&__list	{
+	&__list {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -57,6 +67,7 @@
 		min-height: 250px;
 		object-fit: cover;
 		border-radius: 5px 5px 0 0;
+		outline: transparent;
 	}
 
 	&__info {
@@ -78,17 +89,51 @@
 		line-height: 1.4;
 		border: 1px solid transparent;
 		transition: color 0.5s;
+		outline: transparent;
 	}
 
 	&__preview {
 		font-size: 18px;
 		font-weight: 500;
 		height: 77px;
-		overflow: hidden;
 		width: 305px;
 		margin-bottom: 5px;
 		color: #262626;
-		display: block;
+		outline: transparent;
+		@include text-limit;
+		-webkit-line-clamp: 3;
+	}
+
+	&__img-link {
+		outline: transparent;
+		&:focus {
+			.blog__img {
+				@extend %shadow;
+			}
+		}
+
+		&:active {
+			.blog__img {
+				box-shadow: 0 0 0 3px #009dff;
+			}
+		}
+	}
+
+	&__info-link {
+		&:focus {
+			@extend %shadow;
+		}
+
+		&:active {
+			background-color: $header-accent;
+			color: #fff;
+		}
+	}
+
+	&__preview {
+		&:focus {
+				color: $text;
+		} 
 	}
 
 	&__bottom {
@@ -109,7 +154,7 @@
 		padding-left: 20px;
 
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			width: 12px;
 			height: 12px;
@@ -125,6 +170,7 @@
 		transition: color 0.5s;
 		padding-left: 20px;
 		position: relative;
+		outline: transparent;
 
 		&:hover {
 			color: $accent-blue;
@@ -135,10 +181,18 @@
 			}
 		}
 
+		&:focus {
+			@extend %shadow;
+		}
+
+		&:active {
+			box-shadow: 0 0 0 3px $active;
+		}
+
 		.blog-user {
 			position: absolute;
 			left: 0;
-			top: 1px;
+			top: 0;
 			margin-right: 8px;
 		}
 	}

@@ -23,18 +23,18 @@
 
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a class="menu__link menu__link--active" href="index.html">Home +</a></li>
-						<li class="menu__item"><a class="menu__link" href="page.html">About</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Pages +</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">News</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+						<li class="menu__item"><a class="menu__link menu-hover" href="index.html">Home +</a></li>
+						<li class="menu__item"><a class="menu__link menu-hover" href="page.html">About</a></li>
+						<li class="menu__item"><a class="menu__link menu-hover" href="#">Services</a></li>
+						<li class="menu__item"><a class="menu__link menu-hover" href="#">Pages +</a></li>
+						<li class="menu__item"><a class="menu__link menu-hover" href="#">News</a></li>
+						<li class="menu__item"><a class="menu__link menu-hover" href="#">Contact</a></li>
 					</ul>
 				</nav>
 
 				<ul class="user-nav">
 					<li class="user-nav__item">
-						<button class="search">
+						<button class="user-btn search">
 							<span class="sr-only">Search button</span>
 							<svg class="search-svg" width="18" height="18">
 								<use xlink:href="images/sprite.svg#icon-search"></use>
@@ -50,6 +50,7 @@
 							</svg>
 							<span class="user-nav__num">0</span>
 						</a>
+
 						<a class="user-nav__link user-nav__link--cart" href="#">
 							<span class="sr-only">Cart button</span>
 							<svg class="user-ico" width="20" height="20">
@@ -60,7 +61,7 @@
 					</li>
 
 					<li class="dropdown">
-						<button class="user-nav__btn" type="button">
+						<button class="user-btn" type="button">
 							<span class="sr-only">Cart button</span>
 							<svg class="dropdown-svg" width="20" height="20">
 								<use xlink:href="images/sprite.svg#dropdown"></use>
@@ -135,9 +136,8 @@
 				<li class="top-info__item">
 					<div class="top-info__box top-info__box--support">
 						<span class="top-info__title">Support 24/7.</span>
-						<div class="top-info__text">
-							<p>Contact us 24 hours a day,</p>
-							<p>7 days a week.</p>
+						<div class="top-info__text top-info__text--first">
+							<p>Contact us 24 hours a day, 7 days a week.</p>
 						</div>
 					</div>
 				</li>
@@ -165,31 +165,31 @@
 
 		<section class="products">
 			<div class="container container--narrow">
-				<h3 class="title products-title">Products of the week</h3>
+				<h3 class="title products__title">Products of the week</h3>
 
 				<div class="products__filters">
 					<ul class="filters-list">
 						<li class="filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter="all">All</button>
+							<button class="filters-list__btn menu-hover" type="button" data-filter="all">All</button>
 						</li>
 						<li class="filters-list__item ">
-							<button class="filters-list__btn" type="button" data-filter=".category-a">Furnitures</button>
+							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-a">Furnitures</button>
 						</li>
 						<li class=" filters-list__item ">
-							<button class="filters-list__btn" type="button" data-filter=".category-b">Chairs</button>
+							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-b">Chairs</button>
 						</li>
 						<li class=" filters-list__item ">
-							<button class="filters-list__btn" type="button" data-filter=".category-c">Lighting</button>
+							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-c">Lighting</button>
 						</li>
 						<li class=" filters-list__item ">
-							<button class="filters-list__btn" type="button" data-filter=".category-d">Decor</button>
+							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-d">Decor</button>
 						</li>
 					</ul>
 				</div>
 
 				<ul class=" products__list">
 					<li class="products__item">
-						<article class="products-card mix category-a" data-fancybox="gallery">
+						<article class="products-card mix category-a">
 							<a class="products__image" href="#">
 								<img class="products__img " src="images/product1.png " alt="Wooden radio">
 							</a>
@@ -201,16 +201,16 @@
 							<ul class="products-box">
 								<li class="products__box-item">
 									<a class="products__box-link" href="#">
-										<span class="sr-only ">Search link</span>
-										<svg class="ico " width="20" height="20">
+										<span class="sr-only">Search link</span>
+										<svg class="ico" width="20" height="20">
 											<use xlink:href="images/sprite.svg#product-search"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="products__box-item">
 									<a class="products__box-link" href="#">
-										<span class="sr-only ">Send to cart</span>
-										<svg class="ico " width="22" height="20">
+										<span class="sr-only">Send to cart</span>
+										<svg class="ico" width="22" height="20">
 											<use xlink:href="images/sprite.svg#product-cart"></use>
 										</svg>
 									</a>
@@ -228,7 +228,7 @@
 					</li>
 
 					<li class="products__item">
-						<article class="products-card mix category-a" data-fancybox="gallery">
+						<article class="products-card mix category-a">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product2.png" alt="Wooden radio">
 							</a>
@@ -267,7 +267,7 @@
 					</li>
 
 					<li class="products__item">
-						<article class="products-card mix category-b" data-fancybox="gallery">
+						<article class="products-card mix category-b">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product3.png" alt="Wooden radio">
 							</a>
@@ -306,7 +306,7 @@
 					</li>
 
 					<li class="products__item">
-						<article class="products-card mix category-b" data-fancybox="gallery">
+						<article class="products-card mix category-b">
 							<a class="products__image " href="# ">
 								<img class="products__img" src="images/product4.png" alt="Wooden radio">
 							</a>
@@ -345,7 +345,7 @@
 					</li>
 
 					<li class="products__item">
-						<article class="products-card mix category-c" data-fancybox="gallery">
+						<article class="products-card mix category-c">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product5.png" alt="Wooden radio">
 							</a>
@@ -384,7 +384,7 @@
 					</li>
 
 					<li class="products__item">
-						<article class="products-card mix category-c" data-fancybox="gallery">
+						<article class="products-card mix category-c">
 							<a class="products__image " href="# ">
 								<img class="products__img" src="images/product6.png" alt="Wooden radio">
 							</a>
@@ -423,7 +423,7 @@
 					</li>
 
 					<li class="products__item">
-						<article class="products-card mix category-d" data-fancybox="gallery">
+						<article class="products-card mix category-d">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product7.png" alt="Wooden radio">
 							</a>
@@ -462,7 +462,7 @@
 					</li>
 
 					<li class="products__item">
-						<article class="products-card mix category-d" data-fancybox="gallery">
+						<article class="products-card mix category-d">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product8.png" alt="Wooden radio">
 							</a>
@@ -503,22 +503,23 @@
 			</div>
 			<div class="container">
 				<div class="lamps">
+					
 					<div class="lamps__item">
 						<div class="lamps__inner">
 							<img class="lamps__img" src="images/lamp1.png" alt="lamp">
 							<div class="lamps__box">
-								<h3 class="lamps__title ">Mirum Notare Tellus</h3>
+								<h3 class="lamps__title">Mirum Notare</h3>
 								<div class="lamps__text">
 									<p>
 										LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
 									</p>
-									<a href="#" class="lamps__link">
-										View More
-										<svg class="lamps-arrow" width="22" height="9">
-											<use xlink:href="images/sprite.svg#arrow "></use>
-										</svg>
-									</a>
 								</div>
+								<a href="#" class="link-button lamps__link">
+									View More
+									<svg class="lamps-arrow" width="22" height="9">
+										<use xlink:href="images/sprite.svg#arrow "></use>
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -532,13 +533,13 @@
 									<p>
 										50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
 									</p>
-									<a href="#" class="lamps__link">
-										View More
-										<svg class="lamps-arrow" width="22" height="9">
-											<use xlink:href="images/sprite.svg#arrow"></use>
-										</svg>
-									</a>
 								</div>
+								<a href="#" class="link-button lamps__link">
+									View More
+									<svg class="lamps-arrow" width="22" height="9">
+										<use xlink:href="images/sprite.svg#arrow"></use>
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -549,29 +550,28 @@
 		<section class="design">
 			<div class="container container--narrow">
 				<h3 class="title design-title ">New Design</h3>
-
 				<div class="design__filters">
 					<ul class="filters-list">
 						<li class="filters-list__item">
 							<button class="filters-list__btn" type="button" data-filter="all">All</button>
 						</li>
 						<li class="filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".category-1">Furnitures</button>
+							<button class="filters-list__btn" type="button" data-filter=".sofa">Furnitures</button>
 						</li>
 						<li class=" filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".category-2">Chairs</button>
+							<button class="filters-list__btn" type="button" data-filter=".bad">Chairs</button>
 						</li>
 						<li class=" filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".category-3">Lighting</button>
+							<button class="filters-list__btn" type="button" data-filter=".armchair">Lighting</button>
 						</li>
 						<li class=" filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".category-4">Decor</button>
+							<button class="filters-list__btn" type="button" data-filter=".chair">Decor</button>
 						</li>
 					</ul>
 				</div>
 
 				<ul class=" design__list">
-					<li class="design__item mix category-1">
+					<li class="design__item mix sofa">
 						<a class="design__link" href="#">
 							<article class="design__box" style="background-image: url(images/design/1.jpg);">
 								<h3 class="design__title">
@@ -584,7 +584,7 @@
 						</a>
 					</li>
 
-					<li class="design__item mix category-1" >
+					<li class="design__item mix sofa">
 						<a class="design__link" href="#">
 							<article class="design__box" style="background-image: url(images/design/2.jpg);">
 								<h3 class="design__title">
@@ -597,7 +597,7 @@
 						</a>
 					</li>
 
-					<li class="design__item mix category-2">
+					<li class="design__item mix bad">
 						<a class="design__link" href="#">
 							<article class="design__box" style="background-image: url(images/design/3.jpg);">
 								<h3 class="design__title">
@@ -610,7 +610,7 @@
 						</a>
 					</li>
 
-					<li class="design__item mix category-2">
+					<li class="design__item mix bad">
 						<a class="design__link" href="#">
 							<article class="design__box" style="background-image: url(images/design/4.jpg);">
 								<h3 class="design__title">
@@ -623,7 +623,7 @@
 						</a>
 					</li>
 
-					<li class="design__item mix category-3">
+					<li class="design__item mix armchair">
 						<a class="design__link" href="#">
 							<article class="design__box" style="background-image: url(images/design/5.jpg);">
 								<h3 class="design__title">
@@ -636,7 +636,7 @@
 						</a>
 					</li>
 
-					<li class="design__item mix category-4">
+					<li class="design__item mix chair">
 						<a class="design__link" href="#">
 							<article class="design__box" style="background-image: url(images/design/6.jpg);">
 								<h3 class="design__title">
@@ -653,7 +653,7 @@
 		</section>
 
 		<div class="video" style="background-image: url(images/video-bg.jpg);">
-			<a href="https://youtu.be/AeMQq7OhbO8" class="video__btn" data-fancybox>
+			<a href="https://youtu.be/AeMQq7OhbO8" class="video__link" data-fancybox>
 				<span class="sr-only">Video play button</span>
 				<svg class="play-btn" width="22" height="25">
 					<use xlink:href="images/sprite.svg#play"></use>
@@ -692,7 +692,7 @@
 										<svg class="blog-user" width="12" height="12">
 											<use xlink:href="images/sprite.svg#user-1"></use>
 										</svg>
-										by admin
+										<span>by admin</span>
 									</a>
 								</div>
 							</div>
@@ -814,7 +814,7 @@
 		<div class="container container--narrow">
 			<div class="footer__items">
 				<div class="footer__item">
-					<a class="logo" href="#">
+					<a class="logo" href="index.html">
 						<img class="logo__img" src="images/logo.png" alt="Logo">
 					</a>
 					<address class="footer__contacts">
@@ -823,11 +823,11 @@
 								<span>address</span>: 4772 Wines Lane Houston, TX 77032
 							</p>
 						</div>
-						<a class="footer__text" href="tel:+8323475843">
-							<span>Telephone</span>: +832-347-5843
+						<a class="footer__links footer__text menu-hover" href="tel:+8323475843">
+							<span>telephone</span>: +832-347-5843
 						</a>
-						<a class="footer__text" href="mailto:contact@Glee.com">
-							<span>Email</span>: contact@Glee.com
+						<a class="footer__links footer__text menu-hover" href="mailto:contact@Glee.com">
+							<span>email</span>: contact@Glee.com
 						</a>
 					</address>
 				</div>
@@ -836,19 +836,19 @@
 					<span class="footer__title">Services</span>
 					<ul class="footer__list">
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">About us</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">About us</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">Return Policy</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">Return Policy</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">Our Blog</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">Our Blog</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">Contact Us</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">Contact Us</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">Terms & Condition</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">Terms & Condition</a>
 						</li>
 					</ul>
 				</div>
@@ -857,16 +857,16 @@
 					<span class="footer__title">account</span>
 					<ul class="footer__list">
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">You account</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">You account</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">Checkout</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">Checkout</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">Login</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">Login</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link" href="#">Register</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">Register</a>
 						</li>
 					</ul>
 				</div>
@@ -880,8 +880,8 @@
 					</div>
 					<form class="footer__form">
 						<label class="sr-only" for="email">Email address</label>
-						<input class="footer__email" id="email" type="email" name="email" placeholder="Email address">
-						<button class="footer__btn" type="button">Subscribe</button>
+						<input class="footer__email form-state" id="email" type="email" name="email" placeholder="Email address">
+						<button class="footer__btn form-state" type="button">Subscribe</button>
 					</form>
 				</div>
 			</div>
@@ -895,16 +895,16 @@
 				</div>
 				<ul class="footer-copy__list">
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link">Home</a>
+						<a href="#" class="footer-copy__link footer__links menu-hover">Home</a>
 					</li>
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link">About</a>
+						<a href="#" class="footer-copy__link footer__links menu-hover">About</a>
 					</li>
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link">Blog</a>
+						<a href="#" class="footer-copy__link footer__links menu-hover">Blog</a>
 					</li>
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link">Contact</a>
+						<a href="#" class="footer-copy__link footer__links menu-hover">Contact</a>
 					</li>
 				</ul>
 			</div>

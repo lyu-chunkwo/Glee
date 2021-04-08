@@ -1,11 +1,12 @@
 .design {
 	margin-bottom: 90px;
+
 	.design-title {
 		margin-bottom: 20px;
 	}
 
 	&__filters {
-		margin-bottom: 72px;
+		margin-bottom: 65px;
 	}
 
 	&__list {
@@ -21,32 +22,44 @@
 		width: 100%;
 		border: 2px solid transparent;
 		transition: border-color 0.5s;
+		outline: transparent;
 
 		&:hover {
 			border: 2px solid $accent-blue;
 		}
 	}
-	
+
+	&__link {
+		outline: transparent;
+		&:focus {
+			.design__box {
+				@extend %shadow;
+			}
+		}
+
+		&:active {
+			.design__box {
+				box-shadow: 0 0 0 3px #009dff;
+			}
+		}
+	}
+
 	&__box {
 		height: 250px;
 		padding: 40px 0 0 35px;
 		background-repeat: no-repeat;
 		background-position: center center;
-	}
-
-	&__link {
-
+		
 	}
 
 	&__title {
 		width: 190px;
-		display: block;
 		font-size: 20px;
 		font-weight: 700;
 		color: #191919;
 		margin-bottom: 10px;
-		max-height: 50px;
-		overflow: hidden;
+		@include text-limit;
+		-webkit-line-clamp: 2;
 	}
 
 	&__text {

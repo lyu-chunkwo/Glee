@@ -4,6 +4,8 @@ $text: #7b7b7b;
 $some-text: #2b6373;
 $title: #121212;
 $header-accent: #436372;
+$shadow: #87CEFA;
+$active: #009dff;
 
 %dmsans-400 {
 	font-family: "DMSans", sans-serif;
@@ -37,6 +39,10 @@ $header-accent: #436372;
 
 %transform {
 	transform: translateX(-50%) translateY(-50%);
+}
+
+%shadow {
+	box-shadow: 0 0 10px rgba(36,63,77, 0.5);
 }
 
 @function max($numbers...) {

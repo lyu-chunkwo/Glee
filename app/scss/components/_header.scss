@@ -1,20 +1,15 @@
 .header {
 	width: 100%;
-	
+
 	.header__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 49px 0;
 	}
-	.logo {
-		max-width: 146px;
-		height: 39px;
-		object-fit: cover;
-	}
 
 	.menu {
-		margin-left: 174px;
+		margin-left: 140px;
 
 		&__list {
 			display: flex;
@@ -22,7 +17,7 @@
 		}
 
 		&__item {
-			margin-right: 30px;
+			margin: 0 16px;
 		}
 
 		&__link {
@@ -33,13 +28,19 @@
 			padding-bottom: 2px;
 			border-bottom: 2px solid transparent;
 			transition: border-bottom 0.5s;
+			outline: transparent;
+			padding: 5px 0;
 
 			&--active {
 				border-bottom: 2px solid $header-accent;
 			}
 
-			&:hover {
-				border-bottom: 2px solid $header-accent;
+			&:focus {
+				border: 1px dashed $active;
+			}
+			
+			&:active {
+				color: $active;
 			}
 		}
 	}
@@ -48,15 +49,7 @@
 		display: flex;
 
 		.search {
-			width: 50px;
-			height: 50px;
-			background-color: #ecf1f4;
-			border-radius: 50%;
-			position: relative;
 			margin-right: 20px;
-			transition: background-color 0.5s;
-			cursor: pointer;
-			border: none;
 
 			.search-svg {
 				position: absolute;
@@ -68,8 +61,6 @@
 			}
 
 			&:hover {
-				background-color: $accent-blue;
-
 				.search-svg {
 					fill: #fff;
 				}
@@ -91,9 +82,10 @@
 		}
 
 		&__link {
-			padding: 17px 25px 5px 25px;
+			padding: 18px 35px 5px 35px;
 			position: relative;
 			display: inline-block;
+			outline: transparent;
 
 			.user-ico {
 				fill: $header-accent;
@@ -105,10 +97,21 @@
 					fill: #fff;
 				}
 			}
+
+			&:focus {
+				@extend %shadow;
+			}
+
+			&:active {
+				.user-ico {
+					fill: #87cefa;
+				}
+			}
 		}
 
 		&__link--heart {
 			position: relative;
+			border-radius: 50px 0 0 50px;
 
 			&::after {
 				content: "";
@@ -118,9 +121,13 @@
 				color: #fff;
 				top: 50%;
 				transform: translateY(-50%);
-				right: -9px;
+				right: -1px;
 				background-image: url(../images/svg/line.svg);
 			}
+		}
+
+		&__link--cart {
+			border-radius: 0 50px 50px 0;
 		}
 
 		&__num {
@@ -128,41 +135,24 @@
 			height: 15px;
 			background-color: #fff;
 			position: absolute;
-			right: 17px;
+			right: 28px;
 			top: 10px;
 			font-size: 10px;
 			border-radius: 50%;
 			padding: 1px 0 0 5px;
+			color: $header-accent;
 		}
 
 		.dropdown {
-			border-radius: 50%;
-			background-color: #a3bbc8;
-			position: relative;
-			width: 50px;
-			cursor: pointer;
-			border: 1px solid transparent;
-			transition: border-color 0.5s;
-
-			.user-nav__btn {
-				border: none;
-				background-color: transparent;
-				cursor: pointer;
-			}
-
 			&:hover {
-				transition: background-color 0.5s;
-				background-color: #ecf1f4;
-				border: 1px solid $header-accent;
-
 				.dropdown-svg {
 					transition: fill 0.5s;
-					fill: $header-accent;
+					fill: #fff;
 				}
 			}
 
 			.dropdown-svg {
-				fill: #fff;
+				fill: $header-accent;
 				position: absolute;
 				top: 50%;
 				left: 50%;

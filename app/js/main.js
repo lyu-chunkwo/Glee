@@ -11,9 +11,9 @@ $(function() {
 		autoplay: true,
 	});
 
- 
-  var mixer = mixitup(".products__list");
-  var mixer = mixitup(".design__list");
+
+  var mixer = mixitup('.products__list');
+  var mixer = mixitup('.design__list');
 	
 
 

@@ -8,7 +8,56 @@ body {
 	flex-direction: column;
 	background-color: #fff;
 	@extend %dmsans-400;
-	outline-color: #fff;
+}
+
+@mixin text-limit {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.logo {
+	outline: transparent;
+
+	&__img {
+		max-width: 146px;
+		max-height: 39px;
+		object-fit: cover;
+	}
+
+	&:focus {
+		border: 2px dashed $shadow;
+	}
+	
+	&:active {
+		border: 2px dashed $active;
+	}
+}
+
+.menu-hover {
+	position: relative;
+
+	&:after {
+		content: "";
+		background-color: $header-accent;
+		position: absolute;
+		width: 0;
+		height: 2px;
+		transition: width 0.3s linear;
+	}
+
+	&:after {
+		top: 100%;
+		left: 0;
+	}
+
+	&:hover::after {
+		width: 100%;
+	}
+	
+	&:active::after {
+		background-color: $active;
+	}
 }
 
 .main {
@@ -23,6 +72,30 @@ body {
 
 	&--narrow {
 		max-width: 1190px;
+	}
+}
+
+.user-btn {
+	width: 50px;
+	height: 50px;
+	background-color: #ecf1f4;
+	border-radius: 50%;
+	position: relative;
+	transition: background-color 0.5s;
+	cursor: pointer;
+	border: none;
+	outline: transparent;
+
+	&:hover {
+		background-color: $accent-blue;
+	}
+
+	&:focus {
+		@extend %shadow;
+	}
+
+	&:active {
+		background-color: $header-accent;
 	}
 }
 
@@ -47,38 +120,31 @@ body {
 }
 
 .link-button {
-	padding: 23px 98px 20px 28px;
+	padding: 20px 89px 20px 28px;
 	color: #fff;
 	background-color: $accent-blue;
 	position: relative;
 	border: 2px solid transparent;
 	transition: border 0.5s;
-	outline-color: #fff;
+	outline: transparent;
 
 	&:hover {
 		border: 2px solid #fff;
 	}
 
-	&::after {
-		content: "";
-		position: absolute;
-		background-image: url(../images/svg/arrow.svg);
-		width: 22px;
-		height: 9px;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 18px;
+	&:focus {
+		@extend %shadow;
+	}
+
+	&:active {
+		transition: background-color 0.5s;
+		background-color: $header-accent;
 	}
 }
 
 .filters-list {
 	justify-content: center;
 	display: flex;
-
-	button {
-		padding: 0;
-		outline: transparent;
-	}
 
 	&__item {
 		margin: 0 15px;
@@ -92,9 +158,20 @@ body {
 		color: #8b8b8b;
 		transition: color 0.5s;
 		cursor: pointer;
+		padding: 0;
+		outline: transparent;
+		padding: 5px 0;
 
 		&:hover {
 			color: #191919;
+		}
+
+		&:focus {
+			border: 1px dashed $active;
+		}
+
+		&:active {
+			color: $active;
 		}
 	}
 }

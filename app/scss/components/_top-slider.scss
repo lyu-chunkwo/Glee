@@ -11,8 +11,9 @@
 	}
 
 	&__info {
-		max-width: 417px;
+		max-width: 420px;
 		@extend %rubik-400;
+		padding: 0 0 80px 3px;
 	}
 
 	&__title {
@@ -21,10 +22,9 @@
 		color: #243f4d;
 		text-transform: uppercase;
 		@extend %rubik-500;
-		display: inline-block;
 		margin-bottom: 30px;
-		height: 140px;
-		overflow: hidden;
+		@include text-limit;
+		-webkit-line-clamp: 3;
 	}
 
 	&__text {
@@ -32,9 +32,21 @@
 		line-height: 1.7;
 		color: $header-accent;
 		margin-bottom: 55px;
-		height: 65px;
-		overflow: hidden;
-		text-overflow: ellipsis;
+		@include text-limit;
+		-webkit-line-clamp: 4;
+	}
+
+	.link-button {
+		&::after {
+			content: "";
+			position: absolute;
+			background-image: url(../images/svg/arrow.svg);
+			width: 22px;
+			height: 9px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 18px;
+		}
 	}
 
 	&__img {
@@ -61,11 +73,19 @@
 			font-size: 11px;
 			color: #243f4d;
 			cursor: pointer;
-			outline-color: transparent;
 			transition: background-color 0.5s;
+			outline: transparent;
 
 			&:hover {
 				background-color: #fff;
+			}
+
+			&:focus {
+				@extend %shadow;
+			}
+
+			&:active {
+				background-color: $accent-blue;
 			}
 		}
 	}
