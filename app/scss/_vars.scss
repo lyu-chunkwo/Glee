@@ -51,3 +51,38 @@ $active: #009dff;
 @function min($numbers...) {
 	@return m#{i}n(#{$numbers});
 }
+
+@mixin text-limit {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+}
+
+@mixin state {
+		&:after {
+			content: "";
+			background-color: $header-accent;
+			position: absolute;
+			width: 0;
+			height: 2px;
+			transition: width 0.3s linear;
+		}
+	
+		&:after {
+			top: 100%;
+			left: 0;
+		}
+	
+		&:hover::after {
+			width: 100%;
+		}
+
+		&:focus {
+			border: 1px dashed $active;
+		}
+
+		&:active {
+			color: $active;
+		}
+	}

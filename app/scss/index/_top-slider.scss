@@ -24,7 +24,6 @@
 		@extend %rubik-500;
 		margin-bottom: 30px;
 		@include text-limit;
-		-webkit-line-clamp: 3;
 	}
 
 	&__text {

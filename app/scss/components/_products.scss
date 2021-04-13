@@ -92,6 +92,7 @@
 		transition: transform 0.3s;
 		position: relative;
 		outline: transparent;
+		border: 1px solid #A2BAC7;
 
 		&:focus {
 			@extend %shadow;

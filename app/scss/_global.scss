@@ -10,19 +10,14 @@ body {
 	@extend %dmsans-400;
 }
 
-@mixin text-limit {
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-}
-
 .logo {
 	outline: transparent;
+	display: block;
 
 	&__img {
 		max-width: 146px;
 		max-height: 39px;
-		object-fit: cover;
+		object-fit: contain;
 	}
 
 	&:focus {
@@ -31,32 +26,6 @@ body {
 	
 	&:active {
 		border: 2px dashed $active;
-	}
-}
-
-.menu-hover {
-	position: relative;
-
-	&:after {
-		content: "";
-		background-color: $header-accent;
-		position: absolute;
-		width: 0;
-		height: 2px;
-		transition: width 0.3s linear;
-	}
-
-	&:after {
-		top: 100%;
-		left: 0;
-	}
-
-	&:hover::after {
-		width: 100%;
-	}
-	
-	&:active::after {
-		background-color: $active;
 	}
 }
 
@@ -161,18 +130,8 @@ body {
 		padding: 0;
 		outline: transparent;
 		padding: 5px 0;
-
-		&:hover {
-			color: #191919;
-		}
-
-		&:focus {
-			border: 1px dashed $active;
-		}
-
-		&:active {
-			color: $active;
-		}
+		position: relative;
+		@include state;
 	}
 }
 

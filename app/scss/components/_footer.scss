@@ -14,17 +14,8 @@
 	&__links {
 		display: block;
 		transition: background-color, color 0.5s;
-		&:hover {
-			color: $header-accent;
-		}
-
-		&:focus {
-			border: 1px dashed $active;
-		}
-
-		&:active {
-			color: $active;
-		}
+		position: relative;
+		@include state;
 	}
 
 	&__text {
@@ -86,7 +77,6 @@
 
 		&:hover {
 			color: $header-accent;
-
 		}
 	}
 
@@ -103,14 +93,23 @@
 		font-size: 12px;
 		width: 170px;
 		outline: transparent;
-		
+
 		&::placeholder {
 			font-size: 12px;
 			color: #234969;
 			opacity: 1;
 		}
 	}
-	
+
+	.form-state {
+		&:hover {
+			box-shadow: 0 0 0 1px #87cefa;
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 1px #009dff;
+		}
+	}
 	&__btn {
 		padding: 0 18px;
 		color: #fff;
@@ -124,17 +123,6 @@
 
 		&:active {
 			background-color: $header-accent;
-		}
-	}
-
-	.form-state {
-		
-		&:hover {
-			box-shadow: 0 0 0 1px #87CEFA;
-		}
-
-		&:focus {
-			box-shadow: 0 0 0 1px #009dff;
 		}
 	}
 }
@@ -167,7 +155,7 @@
 		line-height: 2.3px;
 		color: $text;
 		@extend %rubik-400;
-		padding: 5px 0;
+		padding: 8px 0;
 		outline: transparent;
 
 		&:hover {

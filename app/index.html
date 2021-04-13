@@ -23,12 +23,24 @@
 
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a class="menu__link menu-hover" href="index.html">Home +</a></li>
-						<li class="menu__item"><a class="menu__link menu-hover" href="page.html">About</a></li>
-						<li class="menu__item"><a class="menu__link menu-hover" href="#">Services</a></li>
-						<li class="menu__item"><a class="menu__link menu-hover" href="#">Pages +</a></li>
-						<li class="menu__item"><a class="menu__link menu-hover" href="#">News</a></li>
-						<li class="menu__item"><a class="menu__link menu-hover" href="#">Contact</a></li>
+						<li class="menu__item">
+							<a class="menu__link state" href="index.html">Home +</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link state" href="page.html">About</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link state" href="#">Services</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link state" href="#">Pages +</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link state" href="#">News</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link state" href="#">Contact</a>
+						</li>
 					</ul>
 				</nav>
 
@@ -170,26 +182,26 @@
 				<div class="products__filters">
 					<ul class="filters-list">
 						<li class="filters-list__item">
-							<button class="filters-list__btn menu-hover" type="button" data-filter="all">All</button>
+							<button class="filters-list__btn state filter1" type="button" data-filter="all">All</button>
 						</li>
 						<li class="filters-list__item ">
-							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-a">Furnitures</button>
+							<button class="filters-list__btn state filter1" type="button" data-filter=".category-a">Furnitures</button>
 						</li>
 						<li class=" filters-list__item ">
-							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-b">Chairs</button>
+							<button class="filters-list__btn state filter1" type="button" data-filter=".category-b">Chairs</button>
 						</li>
 						<li class=" filters-list__item ">
-							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-c">Lighting</button>
+							<button class="filters-list__btn state filter1" type="button" data-filter=".category-c">Lighting</button>
 						</li>
 						<li class=" filters-list__item ">
-							<button class="filters-list__btn menu-hover" type="button" data-filter=".category-d">Decor</button>
+							<button class="filters-list__btn state filter1" type="button" data-filter=".category-d">Decor</button>
 						</li>
 					</ul>
 				</div>
 
 				<ul class=" products__list">
-					<li class="products__item">
-						<article class="products-card mix category-a">
+					<li class="products__item mix category-a">
+						<article class="products-card">
 							<a class="products__image" href="#">
 								<img class="products__img " src="images/product1.png " alt="Wooden radio">
 							</a>
@@ -227,8 +239,8 @@
 						</article>
 					</li>
 
-					<li class="products__item">
-						<article class="products-card mix category-a">
+					<li class="products__item mix category-a">
+						<article class="products-card">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product2.png" alt="Wooden radio">
 							</a>
@@ -266,8 +278,8 @@
 						</article>
 					</li>
 
-					<li class="products__item">
-						<article class="products-card mix category-b">
+					<li class="products__item mix category-b">
+						<article class="products-card">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product3.png" alt="Wooden radio">
 							</a>
@@ -305,8 +317,8 @@
 						</article>
 					</li>
 
-					<li class="products__item">
-						<article class="products-card mix category-b">
+					<li class="products__item mix category-b">
+						<article class="products-card">
 							<a class="products__image " href="# ">
 								<img class="products__img" src="images/product4.png" alt="Wooden radio">
 							</a>
@@ -344,8 +356,8 @@
 						</article>
 					</li>
 
-					<li class="products__item">
-						<article class="products-card mix category-c">
+					<li class="products__item mix category-c">
+						<article class="products-card">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product5.png" alt="Wooden radio">
 							</a>
@@ -383,8 +395,8 @@
 						</article>
 					</li>
 
-					<li class="products__item">
-						<article class="products-card mix category-c">
+					<li class="products__item mix category-c">
+						<article class="products-card">
 							<a class="products__image " href="# ">
 								<img class="products__img" src="images/product6.png" alt="Wooden radio">
 							</a>
@@ -422,8 +434,8 @@
 						</article>
 					</li>
 
-					<li class="products__item">
-						<article class="products-card mix category-d">
+					<li class="products__item mix category-d">
+						<article class="products-card">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product7.png" alt="Wooden radio">
 							</a>
@@ -461,8 +473,8 @@
 						</article>
 					</li>
 
-					<li class="products__item">
-						<article class="products-card mix category-d">
+					<li class="products__item mix category-d">
+						<article class="products-card">
 							<a class="products__image" href="#">
 								<img class="products__img" src="images/product8.png" alt="Wooden radio">
 							</a>
@@ -503,7 +515,7 @@
 			</div>
 			<div class="container">
 				<div class="lamps">
-					
+
 					<div class="lamps__item">
 						<div class="lamps__inner">
 							<img class="lamps__img" src="images/lamp1.png" alt="lamp">
@@ -553,24 +565,34 @@
 				<div class="design__filters">
 					<ul class="filters-list">
 						<li class="filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter="all">All</button>
+							<button class="filters-list__btn state filter2" type="button" data-filter="all">
+								All
+							</button>
 						</li>
 						<li class="filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".sofa">Furnitures</button>
+							<button class="filters-list__btn state filter2" type="button" data-filter=".sofa">
+								Furnitures
+							</button>
 						</li>
 						<li class=" filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".bad">Chairs</button>
+							<button class="filters-list__btn state filter2" type="button" data-filter=".bad">
+								Chairs
+							</button>
 						</li>
 						<li class=" filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".armchair">Lighting</button>
+							<button class="filters-list__btn state filter2" type="button" data-filter=".armchair">
+								Lighting
+							</button>
 						</li>
 						<li class=" filters-list__item">
-							<button class="filters-list__btn" type="button" data-filter=".chair">Decor</button>
+							<button class="filters-list__btn state filter2" type="button" data-filter=".chair">
+								Decor
+							</button>
 						</li>
 					</ul>
 				</div>
 
-				<ul class=" design__list">
+				<ul class="design__list">
 					<li class="design__item mix sofa">
 						<a class="design__link" href="#">
 							<article class="design__box" style="background-image: url(images/design/1.jpg);">
@@ -823,10 +845,10 @@
 								<span>address</span>: 4772 Wines Lane Houston, TX 77032
 							</p>
 						</div>
-						<a class="footer__links footer__text menu-hover" href="tel:+8323475843">
+						<a class="footer__links footer__text state" href="tel:+8323475843">
 							<span>telephone</span>: +832-347-5843
 						</a>
-						<a class="footer__links footer__text menu-hover" href="mailto:contact@Glee.com">
+						<a class="footer__links footer__text state" href="mailto:contact@Glee.com">
 							<span>email</span>: contact@Glee.com
 						</a>
 					</address>
@@ -836,19 +858,29 @@
 					<span class="footer__title">Services</span>
 					<ul class="footer__list">
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">About us</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								About us
+							</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">Return Policy</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								Return Policy
+							</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">Our Blog</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								Our Blog
+							</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">Contact Us</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								Contact Us
+							</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">Terms & Condition</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								Terms & Condition
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -857,16 +889,24 @@
 					<span class="footer__title">account</span>
 					<ul class="footer__list">
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">You account</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								You account
+							</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">Checkout</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								Checkout
+							</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">Login</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								Login
+							</a>
 						</li>
 						<li class="footer__list-item">
-							<a class="footer__list-link footer__links menu-hover" href="#">Register</a>
+							<a class="footer__list-link footer__links menu-hover" href="#">
+								Register
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -895,16 +935,16 @@
 				</div>
 				<ul class="footer-copy__list">
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link footer__links menu-hover">Home</a>
+						<a href="#" class="footer-copy__link footer__links">Home</a>
 					</li>
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link footer__links menu-hover">About</a>
+						<a href="#" class="footer-copy__link footer__links">About</a>
 					</li>
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link footer__links menu-hover">Blog</a>
+						<a href="#" class="footer-copy__link footer__links">Blog</a>
 					</li>
 					<li class="footer-copy__item">
-						<a href="#" class="footer-copy__link footer__links menu-hover">Contact</a>
+						<a href="#" class="footer-copy__link footer__links">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -914,3 +954,4 @@
 </body>
 
 </html>
+<!-- <div class="stars" data-rateyo-rating="3.2"></div> -->

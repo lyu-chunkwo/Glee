@@ -70,7 +70,6 @@
 		line-height: 2.2;
 		color: #585858;
 		@include text-limit;
-		-webkit-line-clamp: 3;
 	}
 
 	&__text--first {

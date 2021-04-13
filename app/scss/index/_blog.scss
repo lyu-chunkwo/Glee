@@ -101,7 +101,12 @@
 		color: #262626;
 		outline: transparent;
 		@include text-limit;
-		-webkit-line-clamp: 3;
+	}
+
+	&__img {
+		max-width: 370px;
+		max-height: 250px;
+		object-fit: cover;
 	}
 
 	&__img-link {

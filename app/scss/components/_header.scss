@@ -1,7 +1,7 @@
 .header {
 	width: 100%;
 
-	.header__inner {
+	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -30,18 +30,8 @@
 			transition: border-bottom 0.5s;
 			outline: transparent;
 			padding: 5px 0;
-
-			&--active {
-				border-bottom: 2px solid $header-accent;
-			}
-
-			&:focus {
-				border: 1px dashed $active;
-			}
-			
-			&:active {
-				color: $active;
-			}
+			position: relative;
+			@include state;
 		}
 	}
 
@@ -51,6 +41,12 @@
 		.search {
 			margin-right: 20px;
 
+			&:hover {
+				.search-svg {
+					fill: #fff;
+				}
+			}
+
 			.search-svg {
 				position: absolute;
 				top: 50%;
@@ -58,12 +54,6 @@
 				transform: translate(-50%, -50%);
 				transition: fill 0.3s;
 				fill: $header-accent;
-			}
-
-			&:hover {
-				.search-svg {
-					fill: #fff;
-				}
 			}
 		}
 
@@ -150,14 +140,14 @@
 					fill: #fff;
 				}
 			}
+		}
 
-			.dropdown-svg {
-				fill: $header-accent;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
+		.dropdown-svg {
+			fill: $header-accent;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 }

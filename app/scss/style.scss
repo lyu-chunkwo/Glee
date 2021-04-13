@@ -5,11 +5,12 @@
 @import "global";
 
 @import "components/header";
-@import "components/top-slider";
-@import "components/top-info";
 @import "components/products";
 @import "components/footer";
 @import "components/design";
 @import "components/video-block";
-@import "components/blog";
 @import "components/partners-slider";
+
+@import "index/blog";
+@import "index/top-info";
+@import "index/top-slider";
