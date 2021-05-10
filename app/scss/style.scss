@@ -14,3 +14,10 @@
 @import "index/blog";
 @import "index/top-info";
 @import "index/top-slider";
+
+@import "components/top-block";
+
+//about page
+@import "components/_about/mission";
+@import "components/_about/statistic";
+@import "components/_about/team";
