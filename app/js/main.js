@@ -102,9 +102,10 @@ $(function() {
 					dots: false
 				}
 			},
-
+		],
+		responsive: [
 			{
-				breakpoint: 861,
+				breakpoint: 851,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1,
